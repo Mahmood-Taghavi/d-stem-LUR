@@ -4,6 +4,9 @@ clear all
 v = ver;
 test_stat=any(strcmp('Statistics Toolbox', {v.Name}));
 if not(test_stat)
+   test_stat=any(strcmp('Statistics and Machine Learning Toolbox', {v.Name}));
+end
+if not(test_stat)
     error('You need the Statistics Toolbox and the Optimization Toolbox to run this case study. The Statistics Toolbox seems to be missing.');
 end
 test_opt=any(strcmp('Optimization Toolbox', {v.Name}));

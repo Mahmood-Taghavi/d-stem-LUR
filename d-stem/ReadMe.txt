@@ -1,4 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+% This is the original d-stem software (version 1) with minor changes. %
+% The minor changes are highlighted in "d-stem_v1_minor_changes.txt".  %
+% https://github.com/Mahmood-Taghavi/d-stem-LUR                        %
+% Please check the above repository for Land-Use-Regression modeling.  %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % D-STEM - Distributed Space Time Expecation Maximization              %
 %                                                                      %
 % Author: Francesco Finazzi                                            %

@@ -1,0 +1,4 @@
+Modifications that were done as part of the d-stem_LUR project by Mahmood Taghavi:
+https://github.com/Mahmood-Taghavi/d-stem-LUR
+**********************************************************************************
+- make the d-stem examples runnable when instead of statistics toolbox the statistics and machine learning toolbox is available
