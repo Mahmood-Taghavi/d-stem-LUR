@@ -5,7 +5,7 @@
 % Please cite the d-stem-LUR paper in addition to d-stem paper in your work:
 % Taghavi-Shahri SM, Fasso A, Mahaki B, Amini H. Concurrent Spatiotemporal Daily Land Use Regression Modeling and Missing Data Imputation of Fine Particulate Matter Using Distributed Space Time Expectation Maximization.
 
-function obj_stem_model = FitModelSpatialPredictors(response_ground , predictors , index , reffect , cvsites, initial)
+function obj_stem_model = FitModelSpatialPredictorsAutoCorrExp(response_ground , predictors , index , reffect , cvsites, initial)
 % Fit stem model using response ground, and predictors with mentioned index.
 % Note: if index=[] then a spatiotemporal kriging model will be fit, 
 % reffect specify random effect predictors based on thier location in index
@@ -15,7 +15,7 @@ function obj_stem_model = FitModelSpatialPredictors(response_ground , predictors
 % The initial can be Nan, or an initial vector, or a obj_stem_model.stem_par
 % The format of initial vector is [theta_p alpha_p G sigma_eta sigma_eps beta]
 % The initial vector can be just beginning elements of the above mentioned vecror
-% Note: default autocorrelation function is set in line of "obj_stem_par = stem_par(obj_stem_data,'matern52'); % options: 'exponential' 'matern32' 'matern52'    "
+% Note: default autocorrelation function is set in line of "obj_stem_par = stem_par(obj_stem_data,'exponential'); % options: 'exponential' 'matern32' 'matern52'    "
 
 v = ver;
 test_stat=any(strcmp('Statistics Toolbox', {v.Name}));
@@ -106,7 +106,7 @@ end
 if isa(initial, 'stem_par')
     obj_stem_par = initial;
 else
-    obj_stem_par = stem_par(obj_stem_data,'matern52'); % options: 'exponential' 'matern32' 'matern52'    
+    obj_stem_par = stem_par(obj_stem_data,'exponential'); % options: 'exponential' 'matern32' 'matern52'    
 end
 
 %stem_model object creation
