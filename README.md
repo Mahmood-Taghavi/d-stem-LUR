@@ -1,5 +1,5 @@
 # d-stem-LUR
-This is the companion repository for the paper titled "Concurrent Spatiotemporal Daily Land Use Regression Modeling and Missing Data Imputation of Fine Particulate Matter Using Distributed Space-Time Expectation Maximization" which published in Atmospheric Environment journal (http://doi.org/10.1016/j.atmosenv.2019.117202). 
+This is the companion repository for the paper titled "Concurrent Spatiotemporal Daily Land Use Regression Modeling and Missing Data Imputation of Fine Particulate Matter Using Distributed Space-Time Expectation Maximization" which is published in Atmospheric Environment journal (http://doi.org/10.1016/j.atmosenv.2019.117202). 
 Currently, we have added the dataset and cleaned code to fit and evaluate the final D-STEM kriging and D-STEM LUR models. Also, the code used for assessment of the imputation models is added.
 ## data
 This folder contains daily PM2.5 concentrations in 2015 and the corresponding pool of 210 potentially predictive variables (PPVs) in 30 monitoring stations in Tehran.
